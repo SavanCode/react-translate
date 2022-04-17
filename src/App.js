@@ -34,6 +34,15 @@ class App extends Component {
     const link = <Link content="link" />;
     return (
       <div className="App">
+        <div
+          id="google_translate_element"
+          style={{
+            position: 'fixed',
+            bottom: '0px',
+            right: '0px',
+            zIndex: 100,
+          }}
+        ></div>
         <select value={this.state.lang} onChange={this.onLangChange}>
           <option value="en">EN</option>
           <option value="de">DE</option>
